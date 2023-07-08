@@ -1,6 +1,6 @@
-# SimpleArch
+# AppArch
 
-SimpleArch is a *swifty*, lightweight, and easy to use way to define your macOS, iOS, tvOS, and watchOS app's architecture using a SOLID architecture patterns. It also provides a simple way to interact with URLSession inspired by [Moya](https://github.com/Moya/Moya). It is inspired by [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and SOLID design patterns. It is written in Swift 5.1 and is compatible with macOS 10.13+, iOS 11.0+, tvOS 11.0+, and watchOS 4.0+.
+AppArch is a *swifty*, lightweight, and easy to use way to define your macOS, iOS, tvOS, and watchOS app's architecture using a SOLID architecture patterns. It also provides a simple way to interact with URLSession inspired by [Moya](https://github.com/Moya/Moya). It is inspired by [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and SOLID design patterns. It is written in Swift 5.1 and is compatible with macOS 10.13+, iOS 11.0+, tvOS 11.0+, and watchOS 4.0+.
 
 ## Installation
 The package is available through [Swift Package Manager](https://swift.org/package-manager/).
