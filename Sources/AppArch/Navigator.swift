@@ -100,7 +100,7 @@ public protocol NavigatorLink {
  */
 public protocol NavigatorRouter: AnyObject {
     @MainActor @ViewBuilder
-    func view(forLink link: any NavigatorLink) -> any View
+    func view(forLink link: any NavigatorLink) -> AnyView
     
     @MainActor @ViewBuilder
     func link(title: String, to link: any NavigatorLink) -> NavigationLink<Text, AnyView>
@@ -111,8 +111,8 @@ public protocol NavigatorRouter: AnyObject {
 
 public extension NavigatorRouter {
     @MainActor @ViewBuilder
-    func view(forLink link: any NavigatorLink) -> any View {
-        link.view
+    func view(forLink link: any NavigatorLink) -> AnyView {
+        AnyView(link.view)
     }
     
     @MainActor @ViewBuilder

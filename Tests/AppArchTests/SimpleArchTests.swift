@@ -1,5 +1,5 @@
 import XCTest
-@testable import SimpleArch
+@testable import AppArch
 
 final class SimpleArchTests: XCTestCase {
     func testExample() throws {

@@ -7,6 +7,22 @@ The package is available through [Swift Package Manager](https://swift.org/packa
 
 
 ## Usage
+### KeychainStorage
+KeychainStorage is a property wrapper that allows you to store Codable objects in the keychain.
+ 
+#### Example
+```swift
+struct User: Codable {
+    let name: String
+    let age: Int
+}
+
+@KeychainStorage(key: "user") var user: User?
+print(user) // nil
+user = User(name: "Mateo", age: 23)
+print(user) // User(name: "Mateo", age: 23)
+```
+    
 ### Navigation
 SimpleArch provides a simple way to navigate between screens. It defines a `NavigationRouter` protocol type that represents a router that can handle the navigation of your app. You MUST use only reference typed artifacts to define your routers, and conform to this protocol to use the navigator. Create a `class` or `actor` that conforms to this protocol and use it as an __environment object__ in your app. You can use the navigator to navigate to any view in your app, using the link's associated values to send data to the view. The router is able to ask for the associted link's view or generate navigation links to the associated views.
 
