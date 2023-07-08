@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Mateo Olaya on 7/07/23.
-//
-
 import Foundation
 
 public actor NetworkManager {
